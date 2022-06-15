@@ -29,6 +29,7 @@ export default {
 .header {
     background-color: var(--cod-gray);
     padding: .9375rem 0;
+    width: 100%;
     &_row {
         @include MainContainer;
         @include FlexRowBetween;

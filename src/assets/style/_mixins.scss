@@ -13,6 +13,13 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@mixin FlexColumnBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
 /*------------------
     BUTTON
 ------------------*/

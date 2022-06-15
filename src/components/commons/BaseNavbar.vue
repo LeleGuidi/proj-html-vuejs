@@ -23,10 +23,12 @@ export default {
     color: var(--jumbo);
 
     &_list {
+        // Stile alla lista, colori e display flex 
         list-style: none;
         @include FlexRowBetween;
         gap: 2rem;
 
+        // Aggiunta del contenuto "new" all'ultimo item della lista 
         li:last-child::after {
             content: 'new';
             margin: 0 0.8rem;
@@ -38,11 +40,13 @@ export default {
 
         }
 
+        // stili al tag a della lista 
         a {
             text-decoration: none;
             color: inherit;
         }
 
+        // Stile al tag active, attribuito al tag a attivato 
         .active {
             color: white;
         }

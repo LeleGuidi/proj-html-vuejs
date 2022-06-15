@@ -26,15 +26,15 @@ export default {
         // Stile alla lista, colori e display flex 
         list-style: none;
         @include FlexRowBetween;
-        gap: 2rem;
+        gap: 1.5rem;
 
         // Aggiunta del contenuto "new" all'ultimo item della lista 
         li:last-child::after {
             content: 'new';
-            margin: 0 0.8rem;
-            padding: 0.2rem 0.4rem;
+            margin: 0 0.5rem;
+            padding: 0.2rem 0.3rem;
             display: inline-block;
-            background-color: #fff941;
+            background-color: var(--yellow);
             font-size: 0.8rem;
             border-radius: .1875rem;
 

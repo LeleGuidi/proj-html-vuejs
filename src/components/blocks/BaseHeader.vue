@@ -28,7 +28,7 @@ export default {
 @import '../../assets/style/_mixins.scss';
 .header {
     background-color: var(--cod-gray);
-    padding: .9375rem 0;
+    padding: 1.5rem 0;
     width: 100%;
     &_row {
         @include MainContainer;
@@ -38,17 +38,15 @@ export default {
     &_img {
         flex-grow: 1;
         img {
-            width: 15rem;
+            width: 12rem;
         }
     }
     &_right {
         @include FlexRowBetween;
-        gap: 2.5rem;
+        gap: 1.5rem;
         button {
             @include ButtonStyle;
-            background-color: var(--dodger-blu);
-            border: .0625rem solid var(--dodger-blu);
-            color: var(--white);
+            @include ButtonColorBlu;
         }
         .icon {
             color: var(--jumbo);

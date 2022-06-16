@@ -2,25 +2,23 @@
   <section class="hero">
     <div class="hero_container">
         <div class="title">
-            <h4>Certified fitness professional</h4>
-            <h1>Take control of your health</h1>
+            <h4>Join our mailing list today</h4>
+            <h2>Insider offers & flash sales in your inbox every week.</h2>
             <BaseSeparator/>
-            <span>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</span>
             <div class="cta_button">
-                <button class="visit_youtube"><i class="fa-brands fa-youtube"></i> Visit my Youtube channel</button>
-                <button class="buy_now">Buy Avada today <i class="fa-solid fa-arrow-right"></i></button>
+                <input class="email_input" type="email" placeholder="Insert your email ...*">
+                <button class="subscribe">Subscribe</button>
             </div>
+            <span>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.</span>
         </div>
-        <BasePlayButton class="cont_play"/>
     </div>
   </section>
 </template>
 
 <script>
-import BasePlayButton from '../commons/BasePlayButton.vue'
 import BaseSeparator from '../commons/BaseSeparator.vue'
 export default {
-  components: { BaseSeparator, BasePlayButton },
+  components: { BaseSeparator},
 
 }
 </script>
@@ -28,55 +26,56 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/style/_mixins.scss';
 .hero {
-    background: linear-gradient(90deg, rgba(6,6,6,1) 47%, rgba(6,6,6,0.6124824929971988) 53%, rgba(6,6,6,0) 72%), url("../../assets/img/slider82x-scaled.jpg");
+    background: linear-gradient(90deg, rgba(6,6,6,1) 47%, rgba(6,6,6,0.6124824929971988) 53%, rgba(6,6,6,0) 72%), url("../../assets/img/banner1-2x.jpg");
     background-position: center top;
     background-size: cover;
     width: 100%;
     padding: 7rem;
-    @include paddingX;
     
-
     &_container {
         @include MainContainer;
-        @include FlexRowBetween;
     }
     
     .title {
         @include FlexColumnBetween;
         align-items: start;
         gap: 1.2rem;
-        flex-flow: 1;
+        width: 70%;
 
         h4 {
             color: var(--burnt-sienna);
-            font-size: 1.25rem;
+            font-size: 1.10rem;
+            font-weight: 500;
         }
-        h1 {
-            font-size: 3.4375rem;
+        h2 {
+            font-size: 2.7rem;
+            font-weight: 500;
             color: var(--white);
+            padding-right: 1rem;
         }
         .separatore {
             color: var(--yellow);
         }
         span {
             color: var(--jumbo);
+            padding-right: 1rem;
         }
         .cta_button {
+            width: 100%;
             padding: 1rem 0;
-            button {
-                @include ButtonStyle;
-                margin-right: 1rem;
-            }
-            button.visit_youtube {
+            button.subscribe {
                 @include ButtonColorBlu;
+                @include ButtonStyle;
+                margin-left: 1.7rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
             }
-            button.buy_now {
-                @include ButtonColorBlack;
+            .email_input {
+                @include InputText;
+                width: 65%;
+
             }
         }  
-    }
-    .cont_play {
-        flex-grow: 0.4;
     }
 }
 </style>

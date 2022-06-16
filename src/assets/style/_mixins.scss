@@ -58,6 +58,14 @@
     border: 0;
 }
 /*------------------
+    INPUT
+------------------*/
+@mixin InputText {
+    border-radius: 1.25rem;
+    padding: .75rem 1.5rem;
+    border: 0;
+}
+/*------------------
     CARDS
 ------------------*/
 @mixin cardBoxShadow {

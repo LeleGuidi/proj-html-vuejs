@@ -2,7 +2,7 @@
   <section class="services">
     <div class="services_container">
         <div class="services_cards">
-            <BaseCard class="base_card" v-for="(service, i) in services" :key="i" :items="services[i]"/>
+            <BaseCard class="base_card" v-for="(service, i) in services" :key="i" :items="service"/>
         </div>
         <div class="services_motivation">
             <h2>"How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser."</h2>

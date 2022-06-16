@@ -129,7 +129,7 @@ export default {
 
         .featured_playlist {
             @include FlexRowBetween;
-            padding: 0 1rem 2rem 1rem;
+            padding: 0 1rem 2rem 0;
 
             h4 {
                 font-weight: 400;

@@ -28,8 +28,9 @@ export default {
 @import '../../assets/style/_mixins.scss';
 .header {
     background-color: var(--cod-gray);
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     width: 100%;
+
     &_row {
         @include MainContainer;
         @include FlexRowBetween;

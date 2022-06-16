@@ -6,6 +6,7 @@
     <SectionMailing/>
     <SectionPlan/>
     <SectionArticles/>
+    <SectionSlogan/>
 </main>
 </template>
 
@@ -15,6 +16,7 @@ import SectionHero from '../sections/SectionHero.vue'
 import SectionMailing from '../sections/SectionMailing.vue'
 import SectionPlan from '../sections/SectionPlan.vue'
 import SectionServices from '../sections/SectionServices.vue'
+import SectionSlogan from '../sections/SectionSlogan.vue'
 import SectionVideo from '../sections/SectionVideo.vue'
 
 export default {
@@ -24,7 +26,8 @@ export default {
     SectionVideo, 
     SectionMailing,
     SectionPlan,
-    SectionArticles
+    SectionArticles,
+    SectionSlogan
   },
 
 }

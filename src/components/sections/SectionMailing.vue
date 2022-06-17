@@ -61,12 +61,13 @@ export default {
             padding-right: 1rem;
         }
         .cta_button {
+            @include FlexRowBetween;
+            gap: 2rem;
             width: 100%;
             padding: 1rem 0;
             button.subscribe {
                 @include ButtonColorBlu;
                 @include ButtonStyle;
-                margin-left: 1.7rem;
                 padding-left: 5rem;
                 padding-right: 5rem;
             }

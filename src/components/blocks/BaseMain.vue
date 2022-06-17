@@ -8,10 +8,12 @@
     <SectionArticles/>
     <SectionSlogan/>
     <SectionSponsor/>
+    <SectionTraining/>
 </main>
 </template>
 
 <script>
+import SectionTraining from '../sections/SectionTraining.vue'
 import SectionArticles from '../sections/SectionArticles.vue'
 import SectionHero from '../sections/SectionHero.vue'
 import SectionMailing from '../sections/SectionMailing.vue'
@@ -23,6 +25,7 @@ import SectionVideo from '../sections/SectionVideo.vue'
 
 export default {
   components: { 
+    SectionTraining,
     SectionHero, 
     SectionServices, 
     SectionVideo, 

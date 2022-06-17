@@ -91,6 +91,10 @@ export default {
 
                 position: relative;
                 top: -3.125rem;
+
+                &:hover {
+                    transform: scale(1);
+                }
             }
             .col:last-child {
                 @include FlexColumnBetween;

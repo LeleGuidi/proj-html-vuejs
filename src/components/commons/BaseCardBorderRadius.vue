@@ -32,6 +32,9 @@ export default {
     // Applicato position relative per spostare il componente dei dettagli
     position: relative;
 
+    &:hover {
+        transform: scale(1.05);
+    }
     &_detail{
         // Applicato position absolute, in modo da poter applicare un padding bottom alla card in modo da mantenere il ratio 
         position: absolute;

@@ -33,6 +33,10 @@ export default {
 
     @include FlexColumnBetween;
     gap: 2rem;
+
+    &:hover {
+        transform: scale(1.05);
+    }
     img {
         width: 5.875rem;
     }

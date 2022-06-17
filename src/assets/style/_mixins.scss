@@ -42,16 +42,32 @@
     background-color: var(--dodger-blu);
     border: .1rem solid var(--dodger-blu);
     color: var(--white);
+
+    &:hover {
+        background-color: var(--burnt-sienna);
+        border: .1rem solid var(--burnt-sienna);
+    }
 }
 @mixin ButtonColorBlack {
     background-color: var(--cod-grey);
     border: .1rem solid #78787a8e;
     color: var(--white);
+
+    &:hover {
+        background-color: var(--white);
+        border: .1rem solid var(--white);
+        color: var(--cod-gray);
+    }
 }
 @mixin ButtonColorRed {
     background-color: #e62117;
     border: .1rem solid #e62117;
     color: var(--white);
+
+    &:hover {
+        background-color: var(--burnt-sienna);
+        border: .1rem solid var(--burnt-sienna);
+    }
 }
 @mixin ButtonPlay {
     color: var(--dodger-blu);

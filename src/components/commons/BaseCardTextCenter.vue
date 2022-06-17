@@ -1,18 +1,21 @@
 <template>
   <div class="card_plan">
     <img :src="items.path" :alt="items.title">
+    <BaseSeparator v-show="(items.separator == true)" class="separator"/>
     <div class="title">
-        <h3>{{items.title}}</h3>
-        <h4>{{items.subtitle}}</h4>
+        <h3 v-show="(items.title)">{{items.title}}</h3>
+        <h4 v-show="(items.subtitle)">{{items.subtitle}}</h4>
     </div>
-    <p>{{items.details}}</p>
-    <a href="#/">{{items.link}} <i class="fa-solid fa-angle-right"></i></a>
+    <p class="details">{{items.details}}</p>
+    <a class="link" href="#/">{{items.link}} <i class="fa-solid fa-angle-right"></i></a>
   </div>
 </template>
 
 <script>
+import BaseSeparator from '../smallCommons/BaseSeparator.vue'
 export default {
-    name: 'BaseCardPLan',
+  components: { BaseSeparator },
+    name: 'BaseCardPLanTextCenter',
     props: {
         items: Object,
     }
@@ -32,6 +35,9 @@ export default {
     gap: 2rem;
     img {
         width: 5.875rem;
+    }
+    .separator {
+        color: var(--royal-blue);
     }
     h3 {
         color: var(--white);

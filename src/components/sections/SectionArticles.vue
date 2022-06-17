@@ -1,25 +1,19 @@
 <template>
   <section class="articles">
     <div class="articles_container">
-        <div class="articles_latest">
-            <h4>Latest articles</h4>
-            <a href="#/">Read all articles <i class="fa-solid fa-angle-right"></i></a>
-        </div>
+        <BaseTitleRow title="Latest articles" link="Read all articles"/>
         <div class="bottom_row">
-            <div v-for="(article, i) in articles" :key="i" class="col">
-                <img :src="article.path" :alt="article.title">
-                <div class="article_details">
-                    <h5>{{article.article_title}}</h5>
-                    <span>{{article.article_subtitle}}</span>
-                </div>
-            </div>
+            <BaseCardImage v-for="(article, i) in articles" :key="i" class="col" :items="article"/>
         </div>
     </div>
   </section>
 </template>
 
 <script>
+import BaseCardImage from '../commons/BaseCardImage.vue'
+import BaseTitleRow from '../commons/BaseTitleRow.vue'
 export default {
+  components: { BaseCardImage, BaseTitleRow },
     name: 'SectionArticles',
     data() {
         return {
@@ -78,21 +72,6 @@ export default {
                 @include FlexColumnBetween;
                 align-items: flex-start;
                 gap: 1.5rem;
-            }
-            img {
-                width: 100%;
-            }
-            h5 {
-                padding-bottom: 0.3rem;
-                font-weight: 400;
-                font-size: 1rem
-            }
-            span {
-                color: var(--silver);
-                font-size: small;
-            }
-            h5, span {
-                padding-left: 1rem;
             }
         }
     }

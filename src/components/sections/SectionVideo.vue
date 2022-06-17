@@ -3,7 +3,7 @@
         <div class="video_max_container">
             <div class="top_row">
                 <div class="col">
-                    <BaseCard :items="mainVideo" class="main_video"/>
+                    <BaseCardBorderRadius :items="mainVideo" class="main_video"/>
                 </div>
                 <div class="col">
                     <h4>Tune up your workouts</h4>
@@ -14,13 +14,10 @@
                 </div>
             </div>
             <div class="video_container">
-                <div class="featured_playlist">
-                    <h4>Featured Playlist</h4>
-                    <a href="#/">View all videos <i class="fa-solid fa-angle-right"></i></a>
-                </div>
+                <BaseTitleRow title="Featured playlist" link="View all videos"/>
                 <div class="bottom_row">
                     <div v-for="(video, i) in videos" :key="i" class="col">
-                        <BaseCard :items="video" class="videos"/>
+                        <BaseCardBorderRadius :items="video" class="videos"/>
                         <h5>{{video.video_title}}</h5>
                         <span>{{video.video_subtitle}}</span>
                     </div>
@@ -31,10 +28,12 @@
 </template>
 
 <script>
-import BaseCard from '../commons/BaseCard.vue'
-import BaseYoutubeChannelBtn from '../commons/BaseYoutubeChannelBtn.vue'
+import BaseCardBorderRadius from '../commons/BaseCardBorderRadius.vue'
+import BaseTitleRow from '../commons/BaseTitleRow.vue'
+import BaseYoutubeChannelBtn from '../smallCommons/BaseYoutubeChannelBtn.vue'
+
 export default {
-    components: { BaseCard, BaseYoutubeChannelBtn },
+    components: { BaseCardBorderRadius, BaseYoutubeChannelBtn, BaseTitleRow },
     name: 'SectionVideo',
     data() {
         return {
@@ -126,21 +125,6 @@ export default {
 
     &_container {
         @include MainContainer;
-
-        .featured_playlist {
-            @include FlexRowBetween;
-            padding: 0 1rem 2rem 0;
-
-            h4 {
-                font-weight: 400;
-                font-size: 1.3rem;
-            }
-            a {
-                text-decoration: none;
-                font-size: small;
-                color: inherit;
-            }
-        }
 
         .bottom_row {
             @include FlexRowBetween;

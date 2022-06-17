@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import BaseSeparator from '../commons/BaseSeparator.vue'
+import BaseSeparator from '../smallCommons/BaseSeparator.vue'
 export default {
   components: { BaseSeparator},
 

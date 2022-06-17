@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import BasePlayButton from './BasePlayButton.vue'
-import BaseSeparator from './BaseSeparator.vue'
+import BasePlayButton from '../smallCommons/BasePlayButton.vue'
+import BaseSeparator from '../smallCommons/BaseSeparator.vue'
 export default {
   components: { BaseSeparator, BasePlayButton },
-    name: 'BaseCard',
+    name: 'BaseCardBorderRadius',
     props: {
         items: Object,
     }

@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import BasePlayButton from '../commons/BasePlayButton.vue'
-import BaseSeparator from '../commons/BaseSeparator.vue'
+import BasePlayButton from '../smallCommons/BasePlayButton.vue'
+import BaseSeparator from '../smallCommons/BaseSeparator.vue'
 export default {
   components: { BaseSeparator, BasePlayButton },
 

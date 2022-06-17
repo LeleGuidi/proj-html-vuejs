@@ -2,16 +2,16 @@
   <section class="plan">
     <div class="plan_container">
         <div class="row">
-          <BaseCardPlan v-for="(plan, i) in plans" :key="i" :items="plan"/>        
+          <BaseCardTextCenter v-for="(plan, i) in plans" :key="i" :items="plan"/>        
         </div>
     </div>
   </section>
 </template>
 
 <script>
-import BaseCardPlan from '../commons/BaseCardPlan.vue'
+import BaseCardTextCenter from '../commons/BaseCardTextCenter.vue'
 export default {
-  components: { BaseCardPlan },
+  components: { BaseCardTextCenter },
   name: 'SectionPlan',
   data() {
     return{

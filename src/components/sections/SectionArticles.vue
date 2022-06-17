@@ -42,25 +42,8 @@ export default {
 <style lang="scss">
 @import '../../assets/style/_mixins.scss';
 .articles {
-    width: 100%;
-    padding: 6rem 0;
     &_container {
         @include MainContainer;
-
-        .articles_latest {
-            @include FlexRowBetween;
-            padding: 0 0 2rem 0;
-
-            h4 {
-                font-weight: 400;
-                font-size: 1.3rem;
-            }
-            a {
-                text-decoration: none;
-                font-size: small;
-                color: inherit;
-            }
-        }
 
         .bottom_row {
             @include FlexRowBetween;

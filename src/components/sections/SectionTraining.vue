@@ -4,7 +4,7 @@
             <div class="row">
                 <BasePlayButton class="play"/>
                 <h2>Crossfit workout of the day</h2>
-                <p>November 15th, 2019</p>
+                <h4>November 15th, 2019</h4>
                 <a href="#/">View all videos <i class="arrow fa-solid fa-arrow-right-long"></i></a>
             </div>
         </div>
@@ -23,11 +23,10 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/style/_mixins.scss';
 .training {
-    width: 100%;
-    padding: 7rem 0;
-    background: linear-gradient(150deg, rgba(65,84,254,0.4) 10%, rgba(107,12,122,0.4) 50%, rgba(188,4,40,0.4) 90%), url('../../assets/img/banner14-2x.jpg');
+    background: linear-gradient(150deg, rgba(0, 11, 114, 0.5) 10%, rgba(92, 4, 106, 0.5) 50%,rgba(123, 3, 27, 0.5) 90%), url('../../assets/img/banner14-2x.jpg');
     background-position: center;
     background-size: cover;
+    padding: 8rem 1rem;
 
     &_container {
         @include SmallContainer;
@@ -46,14 +45,11 @@ export default {
             font-size: 2.6rem;
             font-weight: 500;
         }
-        p {
+        h4 {
             color: var(--yellow);
-            font-size: 1.6rem;
-            font-weight: bold;
         }
         a {
             color: var(--white);
-            text-decoration: none;
 
             .arrow {
                 vertical-align: middle;

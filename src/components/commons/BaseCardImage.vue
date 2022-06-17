@@ -5,7 +5,7 @@
         <div class="effect_hover"></div>
     </div>
     <div class="article_details">
-        <h5>{{items.article_title}}</h5>
+        <h6>{{items.article_title}}</h6>
         <span>{{items.article_subtitle}}</span>
     </div>
   </div>
@@ -40,16 +40,14 @@ img {
     width: 100%;
     
 }
-h5 {
+h6 {
     padding-bottom: 0.3rem;
-    font-weight: 400;
-    font-size: 1rem
 }
 span {
     color: var(--silver);
     font-size: small;
 }
-h5, span {
+h6, span {
     padding-left: 1rem;
 }
 </style>

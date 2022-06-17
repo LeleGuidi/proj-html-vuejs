@@ -49,9 +49,6 @@ export default {
 <style lang="scss">
 @import '../../assets/style/_mixins.scss';
 .sponsor {
-    width: 100%;
-    padding: 6rem 0;
-
     &_container {
         @include MainContainer;
 

@@ -10,7 +10,7 @@
             <div class="cit">
                 <img class="cit_profile_img" src="../../assets/img/avatar-1-2x.jpg" alt="Brad Johnson"> 
                 <h6>Brad Johnson</h6>
-                <span>Las Vegasa</span>
+                <span>Las Vegas</span>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@ export default {
                     path: require('../../assets/img/box1-2x.jpg'),
                 },
                 {
-                    title: 'Crossfit workout',
+                    title: 'Team training',
                     subtitle: 'Find a partner',
                     separator: true,
                     path: require('../../assets/img/box3-2x.jpg'),
@@ -53,9 +53,8 @@ export default {
 <style lang="scss">
 @import '../../assets/style/_mixins.scss';
 .services {
-    // Applicata larghezza e padding 
-    width: 100%;
-    padding: 0 0 5rem 0;
+    // Applicato e padding 
+    padding: 0 0 6rem 0;
     @include paddingX;
     // Applicato sfondo effeto sfumatura 
     background: rgb(65,84,254);
@@ -92,9 +91,7 @@ export default {
         text-align: center;
 
         h2 {
-            font-size: 1.875rem;
             color: var(--white);
-            font-weight: 500;
         }
         .separator {
             padding: 2rem;
@@ -106,17 +103,17 @@ export default {
             gap: 1rem;
 
             &_profile_img {
-                width: 3.75rem;
+                width: 3rem;
                 border-radius: 50%;
             }
 
             h6 {
-                font-size: 1rem;
                 color: var(--white);
             }
 
             span {
                 color: var(--silver);
+                font-size: 0.9rem;
             }
         }
     }

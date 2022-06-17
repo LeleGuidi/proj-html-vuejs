@@ -3,8 +3,8 @@
     <img :src="items.path" :alt="items.title">
     <BaseSeparator v-show="(items.separator == true)" class="separator"/>
     <div class="title">
-        <h3 v-show="(items.title)">{{items.title}}</h3>
-        <h4 v-show="(items.subtitle)">{{items.subtitle}}</h4>
+        <h5 v-show="(items.title)">{{items.title}}</h5>
+        <h6 v-show="(items.subtitle)">{{items.subtitle}}</h6>
     </div>
     <p class="details">{{items.details}}</p>
     <a class="link" href="#/">{{items.link}} <i class="fa-solid fa-angle-right"></i></a>
@@ -28,7 +28,7 @@ export default {
     background-color: var(--cod-gray);
     border: .125rem solid var(--royal-blue);
     border-radius: .625rem;
-    padding: 3rem 3rem;
+    padding: 3rem 3.3rem;
     text-align: center;
 
     @include FlexColumnBetween;
@@ -43,25 +43,21 @@ export default {
     .separator {
         color: var(--royal-blue);
     }
-    h3 {
+    h5 {
         color: var(--white);
         padding-bottom: 0.4rem;
     }
-    h4 {
+    h6 {
         color: var(--yellow);
-    }
-
-    h3, h4 {
-        font-weight: 500;
     }
     p {
         color: var(--silver);
+        font-size: 0.9rem;
     }
     a {
         color: var(--white);
         font-weight: 500;
         font-size: .9rem;
-        text-decoration: none;
     }
 }
 </style>

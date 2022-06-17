@@ -6,7 +6,7 @@
                     <BaseCardBorderRadius :items="mainVideo" class="main_video"/>
                 </div>
                 <div class="col">
-                    <h4>Tune up your workouts</h4>
+                    <h5>Tune up your workouts</h5>
                     <h2>The best health & fitness advice online </h2>
                     <BaseYoutubeChannelBtn/>
                     <p>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
@@ -18,7 +18,7 @@
                 <div class="bottom_row">
                     <div v-for="(video, i) in videos" :key="i" class="col">
                         <BaseCardBorderRadius :items="video" class="videos"/>
-                        <h5>{{video.video_title}}</h5>
+                        <h6>{{video.video_title}}</h6>
                         <span>{{video.video_subtitle}}</span>
                     </div>
                 </div>
@@ -74,12 +74,12 @@ export default {
 @import '../../assets/style/_mixins.scss';
 .video {
     background-color: var(--white);
-    padding-bottom: 6.125rem;
 
     &_max_container {
         width: 100%;
         .top_row {
             @include FlexRowBetween;
+            align-items: flex-start;
             gap: 6rem;
 
             .col {
@@ -90,11 +90,8 @@ export default {
                 @include cardBoxShadow;
 
                 position: relative;
-                top: -3.125rem;
-
-                &:hover {
-                    transform: scale(1);
-                }
+                top: -9.125rem;
+                left: -1rem;
             }
             .col:last-child {
                 @include FlexColumnBetween;
@@ -102,18 +99,14 @@ export default {
                 gap: 1.5rem;
                 padding-right: 4rem;
 
-                h4 {
+                h5 {
                     color: var(--royal-blue);
-                    font-weight: 400;
-                    font-size: 1.2rem;
                 }
                 h2 {
-                    font-size: 2.5rem;
-                    font-weight: 400;
+                    font-size: 3rem;
                 }
                 p {
-                    font-weight: 300;
-                    color: var(--silver);
+                    color: var(--jumbo);
 
                 }
                 .visit_youtube {
@@ -144,10 +137,8 @@ export default {
                 margin-bottom: 1.5rem;
                 text-align: left;
             }
-            h5 {
+            h6 {
                 padding-bottom: 0.3rem;
-                font-weight: 400;
-                font-size: 1rem
             }
             span {
                 color: var(--dodger-blu);

@@ -24,7 +24,6 @@ export default {
 
     &_list {
         // Stile alla lista, colori e display flex 
-        list-style: none;
         @include FlexRowBetween;
         gap: 1.5rem;
 
@@ -32,17 +31,15 @@ export default {
         li:last-child::after {
             content: 'new';
             margin: 0 0.5rem;
-            padding: 0.2rem 0.3rem;
+            padding: 0.3rem 0.3rem;
             display: inline-block;
             background-color: var(--yellow);
-            font-size: 0.8rem;
             border-radius: .1875rem;
 
         }
 
         // stili al tag a della lista 
         a {
-            text-decoration: none;
             color: inherit;
         }
 

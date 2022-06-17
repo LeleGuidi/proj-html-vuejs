@@ -47,8 +47,6 @@ export default {
 @import '../../assets/style/_mixins.scss';
 .plan {
   background-color: var(--cod-gray);
-  width: 100%;
-  padding: 5rem 0;
   &_container {
     @include MainContainer;
   }

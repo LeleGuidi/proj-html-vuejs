@@ -1,8 +1,8 @@
 <template>
-  <section class="hero">
-    <div class="hero_container">
+  <section class="mailing">
+    <div class="mailing_container">
         <div class="title">
-            <h4>Join our mailing list today</h4>
+            <h5>Join our mailing list today</h5>
             <h2>Insider offers & flash sales in your inbox every week.</h2>
             <BaseSeparator/>
             <div class="cta_button">
@@ -25,12 +25,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../assets/style/_mixins.scss';
-.hero {
+.mailing {
     background: linear-gradient(90deg, rgba(6,6,6,1) 47%, rgba(6,6,6,0.6124824929971988) 53%, rgba(6,6,6,0) 72%), url("../../assets/img/banner1-2x.jpg");
     background-position: center top;
     background-size: cover;
-    width: 100%;
-    padding: 7rem;
     
     &_container {
         @include MainContainer;
@@ -40,18 +38,14 @@ export default {
         @include FlexColumnBetween;
         align-items: start;
         gap: 1.2rem;
-        width: 70%;
+        width: 66%;
 
-        h4 {
+        h5 {
             color: var(--burnt-sienna);
-            font-size: 1.10rem;
-            font-weight: 500;
         }
         h2 {
-            font-size: 2.7rem;
-            font-weight: 500;
             color: var(--white);
-            padding-right: 1rem;
+            font-size: 3rem;
         }
         .separatore {
             color: var(--yellow);
@@ -65,6 +59,7 @@ export default {
             gap: 2rem;
             width: 100%;
             padding: 1rem 0;
+            
             button.subscribe {
                 @include ButtonColorBlu;
                 @include ButtonStyle;

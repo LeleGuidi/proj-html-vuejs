@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="hero_container">
         <div class="title">
-            <h4>Certified fitness professional</h4>
+            <h5>Certified fitness professional</h5>
             <h1>Take control of your health</h1>
             <BaseSeparator/>
             <span>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</span>
@@ -31,8 +31,6 @@ export default {
     background: linear-gradient(90deg, rgba(6,6,6,1) 47%, rgba(6,6,6,0.6124824929971988) 53%, rgba(6,6,6,0) 72%), url("../../assets/img/slider82x-scaled.jpg");
     background-position: center top;
     background-size: cover;
-    width: 100%;
-    padding: 7rem;
     @include paddingX;
     
 
@@ -47,12 +45,10 @@ export default {
         gap: 1.2rem;
         flex-flow: 1;
 
-        h4 {
+        h5 {
             color: var(--burnt-sienna);
-            font-size: 1.25rem;
         }
         h1 {
-            font-size: 3.4375rem;
             color: var(--white);
         }
         .separatore {

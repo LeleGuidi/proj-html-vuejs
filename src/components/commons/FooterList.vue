@@ -20,7 +20,6 @@ export default {
 .footer_list {
     // Stile alla lista, colori e display flex 
     color: var(--white);
-    list-style: none;
     @include FlexColumnBetween;
     gap: 0.9rem;
 

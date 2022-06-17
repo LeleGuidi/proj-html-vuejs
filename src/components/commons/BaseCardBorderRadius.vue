@@ -2,7 +2,7 @@
     <div class="card" :style="'background-image: url('+items.path+')'">
         <div class="card_detail">
             <BaseSeparator class="separator" v-show="(items.separator == true)"/>
-            <h3 v-show="(items.title)">{{items.title}}</h3>
+            <h5 v-show="(items.title)">{{items.title}}</h5>
             <span v-show="(items.subtitle)">{{items.subtitle}}</span>
         </div>
         <BasePlayButton v-show="(items.play_button == true)" class="play_button" :class="(items.play_button_size == 'medium') ? 'play_button_medium' : '' || (items.play_button_size == 'small') ? 'play_button_small' : '' "/>
@@ -40,11 +40,12 @@ export default {
         position: absolute;
         bottom: 1.25rem;
         left: 1.25rem;
+        
         .separator {
             color: var(--white);
             padding-bottom: 1rem;
         }
-        h3 {
+        h5 {
             color: var(--white);
         }
         span {

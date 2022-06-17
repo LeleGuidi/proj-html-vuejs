@@ -1,6 +1,6 @@
 <template>
     <div class="title_row">
-        <h4>{{title}}</h4>
+        <h5>{{title}}</h5>
         <a href="#/">{{link}} <i class="fa-solid fa-angle-right"></i></a>
     </div>
 </template>
@@ -19,14 +19,9 @@ props: {
 @import '../../assets/style/_mixins.scss';
 .title_row {
     @include FlexRowBetween;
-    padding: 0 1rem 2rem 0;
+    padding: 0 2rem 2rem 0;
 
-    h4 {
-        font-weight: 400;
-        font-size: 1.3rem;
-    }
     a {
-        text-decoration: none;
         font-size: small;
         color: inherit;
     }

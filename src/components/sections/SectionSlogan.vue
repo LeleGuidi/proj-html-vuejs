@@ -20,7 +20,6 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/style/_mixins.scss';
 .slogan {
-    padding: 6.2rem 0;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url("../../assets/img/banner2-2x.jpg");
     background-position: center;
     background-size: cover;
@@ -32,7 +31,7 @@ export default {
     }
     h2 {
         color: var(--white);
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
     p {
         color: var(--white);
